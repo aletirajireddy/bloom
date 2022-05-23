@@ -20,8 +20,8 @@ const App = () => {
           <div className="container mx-auto pb-8">
             <Fifty />
           </div>
-          <div class="block p-6 shadow-lg bg-gray-700 mb-10 py-20">
-            <p class="md:w-2/3 md:leading-10 text-white container mx-auto pb-8 text-xl  md:text-4xl px-3 md:px-12 text-center">
+          <div className="block p-6 shadow-lg bg-gray-700 mb-10 py-20">
+            <p className="md:w-2/3 md:leading-10 text-white container mx-auto pb-8 text-xl  md:text-4xl px-3 md:px-12 text-center">
               Each project is assigned an estimator, project manager and site
               foreman who work cohesively to follow the landscaping project
               through from start to finish. Commercial landscaping projects
