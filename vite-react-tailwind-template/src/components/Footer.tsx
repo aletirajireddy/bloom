@@ -60,10 +60,6 @@ const links = [
   },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
   const goToTop = () => {
     window.scrollTo({

@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../assets/images/blooming-logo.png";
 
 const navigation = [
@@ -10,10 +10,6 @@ const navigation = [
   { name: "Excavation", href: "#", current: false },
   { name: "Site clearence", href: "#", current: false },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Example() {
   return (
@@ -52,12 +48,9 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-text border-b-2 border-b-black"
-                            : "text-text hover:border-b-black",
-                          "px-3 py-2 border-b-transparent border-b-2 text-md font-medium"
-                        )}
+                        className={
+                          "text-text hover:border-b-black px-3 py-2 border-b-transparent border-b-2 text-md font-medium"
+                        }
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
@@ -76,12 +69,9 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-text hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
+                  className={
+                    "block px-3 py-2 rounded-md text-base font-medium text-text hover:bg-gray-700 hover:text-white"
+                  }
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
