@@ -6,7 +6,7 @@ import pic2 from "../assets/images/pic2.jpg";
 export default function Example() {
   return (
     <div>
-      <div className="rounded-md border bg-neutral-50 flex flex-wrap md:flex-nowrap items-center w-full justify-center mx-auto">
+      <div className="rounded-md mb-8 border bg-neutral-50 flex flex-wrap md:flex-nowrap items-center w-full justify-center mx-auto">
         <div className="left p-7 w-full md:basis-1/2">
           <h2 className="text-black font-bold text-4xl">
             Blooming Landscapes have developed a team of Melbourne Landscapers
@@ -19,7 +19,7 @@ export default function Example() {
             experience to supply and construct landscaping solution for
             builders, developers, landscape architects and designers. Delivered
             on time and on budget Blooming Landscapes will work with you to
-            develop the best landscaping solution for your
+            develop the best landscaping solution for your project.
           </p>
         </div>
         <div className="right w-full md:basis-1/2">
